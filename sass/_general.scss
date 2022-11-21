@@ -1,0 +1,25 @@
+* {
+    // *-------- Reset Default Styles --------
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: var(--main-font);
+    color: var(--color-1);
+
+    & > .main-container {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+a {
+    text-decoration-line: none;
+    color: var(--color-1);
+}
+
+main {
+    
+}
