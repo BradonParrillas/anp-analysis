@@ -1,0 +1,22 @@
+{
+  "name": "anp-analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielParrillas/anp-analysis.git"
+  },
+  "author": "deb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielParrillas/anp-analysis/issues"
+  },
+  "homepage": "https://github.com/DanielParrillas/anp-analysis#readme",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  }
+}

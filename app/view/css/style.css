@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+nav {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+  position: absolute;
+}
+nav a {
+  color: var(--color-light);
+}
+
+form label {
+  font-weight: 400;
+  font-size: medium;
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+form .form-group > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+form .form-group-block {
+  flex-direction: column;
+}
+
+button {
+  display: flex;
+  width: 6rem;
+  height: 2.2rem;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+button img {
+  width: 1.5rem;
+}
+button.new {
+  background-color: #1ac888;
+}
+button.export {
+  background-color: #326dee;
+  color: white;
+}
+button.export img {
+  color: white;
+}
+button:hover {
+  box-shadow: 0 0 5px 2px #212529;
+}
+
+.small-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+}
+
+.alert {
+  width: 100%;
+  height: 1rem;
+}
+.alert-error {
+  background-color: #d32752;
+  color: white;
+}
+
+:root {
+  --color-primary: #326dee;
+  --color-secondary: #1ac888;
+  --color-danger: #d32752;
+  --color-success: #3BACD9;
+  --color-warning: #f6c31c;
+  --color-dark: #303746;
+  --color-light: #fff;
+  --color-1: #2E3640;
+  --color-2: #D9D9D9;
+  --color-3: #212529;
+  --main-font: poppins, sans-serif;
+}
+
+.dark-theme {
+  --color-1: #fff;
+  --color-2: #D9D9D9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input {
+  font-family: var(--main-font);
+  color: var(--color-1);
+}
+body > div, input > div {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: var(--color-1);
+}
+
+.seccion-principal {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: pink;
+  margin: 1rem;
+}
+.seccion-principal input[type=month] {
+  border: none;
+  background-color: var(--color-2);
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-color: #303746;
+  color: #fff;
+  position: relative;
+}
+
+.popup-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.popup-container .background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #303746;
+  opacity: 0.5;
+}
+.popup-container .container-round-border {
+  max-width: 95%;
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  color: #303746;
+  position: relative;
+}
+.popup-container .container-round-border .button-cerrar-ventana {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem 0.5rem;
+  background-color: #d32752;
+}
+
+#new-record-section .container-round-border {
+  width: 50rem;
+  height: 90%;
+  max-width: 95%;
+  z-index: 1;
+}
+#new-record-section .container-round-border #button-agregar-registro {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0.5rem 1.8rem;
+  padding: 0;
+}
+#new-record-section .container-round-border form {
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+#new-record-section .container-round-border form > section {
+  margin-bottom: 1rem;
+}
+#new-record-section .container-round-border form > section > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+}
+#new-record-section .container-round-border form label {
+  padding: 0 1rem;
+}
+
+#section-messages {
+  z-index: 2;
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+.hidden {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+
+.on-top {
+  z-index: 100;
+}
+
+#section-registros {
+  display: flex;
+  width: 100vw;
+}
+#section-registros .container-round-border {
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  color: #303746;
+  margin: 4rem 1rem 1rem 1rem;
+  width: 100%;
+}
